@@ -39,8 +39,14 @@ jobs:
           bash -n install.sh && echo "OK: install.sh"
           bash -n uninstall.sh && echo "OK: uninstall.sh"
 
-      - name: Install dependencies
+      - name: Install runtime dependencies
         run: pip install -r requirements.txt
+
+      - name: Install dev dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Run eval harness (pytest)
+        run: pytest tests/ -v --tb=short
 
       - name: Audit dependencies for known vulnerabilities
         run: |

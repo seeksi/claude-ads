@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Claude Ads: Paid Advertising Audit Skill for Claude Code" width="100%">
+  <img src="assets/banner.svg" alt="Claude Ads: Paid Advertising Audit Skill for Claude Code — animated terminal-style banner with breathing gradient logo, scanning command palette, and pulsing status indicators" width="100%">
 </p>
 
 # Claude Ads — Paid Advertising Audit Skill for Claude Code

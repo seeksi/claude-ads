@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 720" width="1680" height="720"
+     role="img" aria-label="Claude Ads — AI-Powered Ad Audit. Terminal-style banner with CLAUDE ADS figlet logo and command palette.">
+  <title>Claude Ads — Paid Advertising Audit Skill for Claude Code</title>
+  <desc>Animated terminal-style banner. 21:9, warm-orange CRT phosphor palette. Live command palette with scanning highlight, breathing gradient on the logo, drift scanline, and pulsing status indicators.</desc>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1A1612"/>
+      <stop offset="60%" stop-color="#110E0B"/>
+      <stop offset="100%" stop-color="#060504"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.35"/>
+    </radialGradient>
+    <linearGradient id="logoGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5B095">
+        <animate attributeName="offset" values="0;0;0" dur="4.2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="25%" stop-color="#E89270">
+        <animate attributeName="offset" values="0.25;0.45;0.25" dur="4.2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#D97757">
+        <animate attributeName="offset" values="0.50;0.65;0.50" dur="4.2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="75%" stop-color="#823A23">
+        <animate attributeName="offset" values="0.75;0.85;0.75" dur="4.2s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#7A3A1F"/>
+    </linearGradient>
+    <linearGradient id="dividerGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#D97757"/>
+      <stop offset="50%" stop-color="#E89270"/>
+      <stop offset="100%" stop-color="#D97757"/>
+    </linearGradient>
+    <linearGradient id="driftGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D97757" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#D97757" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#D97757" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scanlines" x="0" y="0" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="2" fill="transparent"/>
+      <rect y="2" width="3" height="1" fill="#000" fill-opacity="0.22"/>
+    </pattern>
+    <filter id="noise" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.18  0 0 0 0 0.17  0 0 0 0 0.15  0 0 0 0.30 0"/>
+    </filter>
+  </defs>
+  <rect width="1680" height="720" fill="#050403"/>
+  <rect width="1680" height="720" fill="url(#bg)"/>
+  <rect width="1680" height="720" fill="#1F1B17" filter="url(#noise)" opacity="0.12" style="mix-blend-mode:overlay"/>
+  <g>
+    <rect x="0" y="0" width="1680" height="2" fill="url(#driftGradient)">
+      <animate attributeName="y" from="-36" to="756" dur="10s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect width="1680" height="720" fill="url(#scanlines)" style="mix-blend-mode:multiply"/>
+  <rect width="1680" height="720" fill="url(#vignette)"/>
+  <g>
+    <rect x="0" y="0" width="1680" height="26" fill="#0A0807"/>
+    <line x1="0" y1="26" x2="1680" y2="26" stroke="#D97757" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="30" cy="13" r="3" fill="#D97757">
+      <animate attributeName="opacity" values="0.45;1;0.45" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="42" y="17" font-family="'Courier New', Menlo, Consolas, monospace" font-size="10"
+          fill="#7A3A1F" letter-spacing="1.6" xml:space="preserve">SYS · CLAUDE-ADS</text>
+    <text x="220" y="17" font-family="'Courier New', Menlo, Consolas, monospace" font-size="10"
+          fill="#7A3A1F" letter-spacing="1.6">NODE 0x1F · ACTIVE</text>
+    <text x="1650" y="17" font-family="'Courier New', Menlo, Consolas, monospace" font-size="10"
+          fill="#5A5750" letter-spacing="1.6" text-anchor="end">UPTIME 04:12:08</text>
+  </g>
+  <g>
+    <text x="84" y="195" font-family="'Courier New', Menlo, Consolas, monospace" font-size="20"
+          font-weight="700" fill="url(#logoGradient)" xml:space="preserve" letter-spacing="0">
+      <tspan x="84" dy="0"> ██████╗██╗      █████╗ ██╗   ██╗██████╗ ███████╗</tspan>
+      <tspan x="84" dy="21">██╔════╝██║     ██╔══██╗██║   ██║██╔══██╗██╔════╝</tspan>
+      <tspan x="84" dy="21">██║     ██║     ███████║██║   ██║██║  ██║█████╗  </tspan>
+      <tspan x="84" dy="21">██║     ██║     ██╔══██║██║   ██║██║  ██║██╔══╝  </tspan>
+      <tspan x="84" dy="21">╚██████╗███████╗██║  ██║╚██████╔╝██████╔╝███████╗</tspan>
+      <tspan x="84" dy="21"> ╚═════╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝</tspan>
+    </text>
+    <text x="84" y="358" font-family="'Courier New', Menlo, Consolas, monospace" font-size="20"
+          font-weight="700" fill="url(#logoGradient)" xml:space="preserve" letter-spacing="0">
+      <tspan x="84" dy="0"> █████╗ ██████╗ ███████╗</tspan>
+      <tspan x="84" dy="21">██╔══██╗██╔══██╗██╔════╝</tspan>
+      <tspan x="84" dy="21">███████║██║  ██║███████╗</tspan>
+      <tspan x="84" dy="21">██╔══██║██║  ██║╚════██║</tspan>
+      <tspan x="84" dy="21">██║  ██║██████╔╝███████║</tspan>
+      <tspan x="84" dy="21">╚═╝  ╚═╝╚═════╝ ╚══════╝</tspan>
+    </text>
+    <rect x="84" y="510" width="560" height="3" rx="1.5" fill="url(#dividerGradient)">
+      <animate attributeName="opacity" values="0.72;1;0.72" dur="4.2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="84" y="558" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="28"
+          font-weight="500" fill="#F5F4ED" letter-spacing="-0.3">AI-Powered Ad Audit</text>
+    <text x="84" y="586" font-family="'Courier New', Menlo, Consolas, monospace" font-size="11"
+          fill="#7A3A1F" letter-spacing="1.8" xml:space="preserve" opacity="0.85">
+      <tspan fill="#D97757">&gt; </tspan>RUNTIME READY · 22 SUB-SKILLS · 209 CHECKS · 6 HOSTS
+    </text>
+  </g>
+  <g>
+    <text x="1596" y="182" font-family="'Courier New', Menlo, Consolas, monospace" font-size="11"
+          fill="#D97757" letter-spacing="2" text-anchor="end" opacity="0.65">
+      <tspan fill="#7A3A1F">┌─ </tspan>COMMAND PALETTE<tspan fill="#7A3A1F"> ─┐</tspan>
+    </text>
+    <g>
+      <text x="1596" y="232" font-family="'Courier New', Menlo, Consolas, monospace" font-size="30"
+            fill="#5A5750" letter-spacing="0.5" text-anchor="end">
+        <tspan fill="#7A3A1F">/</tspan>ads audit
+        <animate attributeName="fill" values="#5A5750;#F5F4ED;#F5F4ED;#5A5750;#5A5750"
+                 keyTimes="0;0.04;0.14;0.18;1" dur="5.7s" begin="0s" repeatCount="indefinite"/>
+      </text>
+      <rect x="1610" y="208" width="18" height="32" fill="#5A5750" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0;1;1;0;0;1;0;0"
+                 keyTimes="0;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.12;0.13;0.14;1"
+                 dur="5.7s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g>
+      <text x="1596" y="276" font-family="'Courier New', Menlo, Consolas, monospace" font-size="30"
+            fill="#5A5750" letter-spacing="0.5" text-anchor="end">
+        <tspan fill="#7A3A1F">/</tspan>ads google
+        <animate attributeName="fill" values="#5A5750;#F5F4ED;#F5F4ED;#5A5750;#5A5750"
+                 keyTimes="0;0.04;0.14;0.18;1" dur="5.7s" begin="0.7s" repeatCount="indefinite"/>
+      </text>
+      <rect x="1610" y="252" width="18" height="32" fill="#5A5750" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0;1;1;0;0;1;0;0"
+                 keyTimes="0;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.12;0.13;0.14;1"
+                 dur="5.7s" begin="0.7s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g>
+      <text x="1596" y="320" font-family="'Courier New', Menlo, Consolas, monospace" font-size="30"
+            fill="#5A5750" letter-spacing="0.5" text-anchor="end">
+        <tspan fill="#7A3A1F">/</tspan>ads meta
+        <animate attributeName="fill" values="#5A5750;#F5F4ED;#F5F4ED;#5A5750;#5A5750"
+                 keyTimes="0;0.04;0.14;0.18;1" dur="5.7s" begin="1.4s" repeatCount="indefinite"/>
+      </text>
+      <rect x="1610" y="296" width="18" height="32" fill="#5A5750" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0;1;1;0;0;1;0;0"
+                 keyTimes="0;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.12;0.13;0.14;1"
+                 dur="5.7s" begin="1.4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g>
+      <text x="1596" y="364" font-family="'Courier New', Menlo, Consolas, monospace" font-size="30"
+            fill="#5A5750" letter-spacing="0.5" text-anchor="end">
+        <tspan fill="#7A3A1F">/</tspan>ads budget
+        <animate attributeName="fill" values="#5A5750;#F5F4ED;#F5F4ED;#5A5750;#5A5750"
+                 keyTimes="0;0.04;0.14;0.18;1" dur="5.7s" begin="2.1s" repeatCount="indefinite"/>
+      </text>
+      <rect x="1610" y="340" width="18" height="32" fill="#5A5750" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0;1;1;0;0;1;0;0"
+                 keyTimes="0;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.12;0.13;0.14;1"
+                 dur="5.7s" begin="2.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g>
+      <text x="1596" y="408" font-family="'Courier New', Menlo, Consolas, monospace" font-size="30"
+            fill="#5A5750" letter-spacing="0.5" text-anchor="end">
+        <tspan fill="#7A3A1F">/</tspan>ads creative
+        <animate attributeName="fill" values="#5A5750;#F5F4ED;#F5F4ED;#5A5750;#5A5750"
+                 keyTimes="0;0.04;0.14;0.18;1" dur="5.7s" begin="2.8s" repeatCount="indefinite"/>
+      </text>
+      <rect x="1610" y="384" width="18" height="32" fill="#5A5750" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0;1;1;0;0;1;0;0"
+                 keyTimes="0;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.12;0.13;0.14;1"
+                 dur="5.7s" begin="2.8s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g>
+      <text x="1596" y="452" font-family="'Courier New', Menlo, Consolas, monospace" font-size="30"
+            fill="#5A5750" letter-spacing="0.5" text-anchor="end">
+        <tspan fill="#7A3A1F">/</tspan>ads plan <tspan fill="#7A3A1F" opacity="0.7">&lt;type&gt;</tspan>
+        <animate attributeName="fill" values="#5A5750;#F5F4ED;#F5F4ED;#5A5750;#5A5750"
+                 keyTimes="0;0.04;0.14;0.18;1" dur="5.7s" begin="3.5s" repeatCount="indefinite"/>
+      </text>
+      <rect x="1610" y="428" width="18" height="32" fill="#5A5750" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0;1;1;0;0;1;0;0"
+                 keyTimes="0;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.12;0.13;0.14;1"
+                 dur="5.7s" begin="3.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    <g>
+      <text x="1596" y="496" font-family="'Courier New', Menlo, Consolas, monospace" font-size="30"
+            fill="#5A5750" letter-spacing="0.5" text-anchor="end">
+        <tspan fill="#7A3A1F">/</tspan>ads competitor
+        <animate attributeName="fill" values="#5A5750;#F5F4ED;#F5F4ED;#5A5750;#5A5750"
+                 keyTimes="0;0.04;0.14;0.18;1" dur="5.7s" begin="4.2s" repeatCount="indefinite"/>
+      </text>
+      <rect x="1610" y="472" width="18" height="32" fill="#5A5750" opacity="0">
+        <animate attributeName="opacity"
+                 values="0;0;1;1;0;0;1;1;0;0;1;0;0"
+                 keyTimes="0;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.12;0.13;0.14;1"
+                 dur="5.7s" begin="4.2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  <g>
+    <rect x="0" y="694" width="1680" height="26" fill="#0A0807"/>
+    <line x1="0" y1="694" x2="1680" y2="694" stroke="#D97757" stroke-opacity="0.22" stroke-width="1"/>
+    <circle cx="30" cy="707" r="3" fill="#D97757">
+      <animate attributeName="opacity" values="0.45;1;0.45" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="42" y="711" font-family="'Courier New', Menlo, Consolas, monospace" font-size="10"
+          fill="#7A3A1F" letter-spacing="1.6">LINK · STABLE</text>
+    <text x="180" y="711" font-family="'Courier New', Menlo, Consolas, monospace" font-size="10"
+          fill="#7A3A1F" letter-spacing="1.6">BUF 1024K</text>
+    <text x="290" y="711" font-family="'Courier New', Menlo, Consolas, monospace" font-size="10"
+          fill="#7A3A1F" letter-spacing="1.6">V1.7.0</text>
+    <text x="1430" y="711" font-family="'Courier New', Menlo, Consolas, monospace" font-size="10"
+          fill="#5A5750" letter-spacing="1.6">208.140.MAINFRAME.AGRICIDANIEL</text>
+    <text x="1650" y="711" font-family="'Courier New', Menlo, Consolas, monospace" font-size="10"
+          fill="#5A5750" letter-spacing="1.6" text-anchor="end">22:18:34 UTC</text>
+  </g>
+</svg>

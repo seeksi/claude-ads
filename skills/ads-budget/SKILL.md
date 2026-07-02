@@ -105,7 +105,6 @@ Start
 - 14% avg conversion lift for non-retail brands at similar CPA/ROAS, up to 27% for exact/phrase-match-heavy campaigns ([Google Ads blog, May 2025](https://blog.google/products/ads-commerce/google-ai-max-for-search-campaigns/))
 - Independent data is more conservative: median +13% revenue / +16% CPA across 250+ campaigns ([ALM Corp](https://almcorp.com/blog/google-ai-max-search-campaigns-performance-cpa-revenue-study/))
 - Requires strong negative keyword lists (AI Max casts a wider net)
-- DSA likely consolidated into AI Max by Q2 2026
 - Best for: accounts with mature conversion tracking and keyword history
 
 ### TikTok Smart+ Modular Control (2025)

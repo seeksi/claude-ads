@@ -1,8 +1,8 @@
 ---
 name: ads-photoshoot
-description: "Product photography enhancement for ad creatives using banana-claude image generation. Takes a product image and generates 5 professional photography styles for ad use: Studio, Floating, Ingredient, In Use, and Lifestyle. Requires banana-claude (v1.4.1+) with nanobanana-mcp. Triggers on: product photo, product photography, photoshoot, enhance product image, product shoot, product photos for ads, generate product photos, studio shot, lifestyle photo."
+description: "Product photography enhancement for ad creatives using the ads multi-provider generation script. Takes a product image and generates 5 professional photography styles for ad use: Studio, Floating, Ingredient, In Use, and Lifestyle. Uses ~/.claude/skills/ads/scripts/generate_image.py (Gemini default; switch with ADS_IMAGE_PROVIDER). Triggers on: product photo, product photography, photoshoot, enhance product image, product shoot, product photos for ads, generate product photos, studio shot, lifestyle photo."
 user-invokable: false
-tested_date: 2026-05-17
+tested_date: 2026-07-02
 tested_with: claude-code v2.x
 ---
 
@@ -23,8 +23,10 @@ and 9:16 (TikTok/Reels/Stories).
 
 ## Environment Setup
 
-Requires banana-claude (v1.4.1+) with nanobanana-mcp configured.
-Run `/banana setup` to configure API key and MCP.
+Requires `~/.claude/skills/ads/scripts/generate_image.py` and the active provider's
+API key: `GOOGLE_API_KEY` for the default gemini provider (`OPENAI_API_KEY` /
+`STABILITY_API_KEY` for others — switch with `ADS_IMAGE_PROVIDER`). Setup and
+pricing: `~/.claude/skills/ads/references/image-providers.md`.
 
 ## Process
 
@@ -51,10 +53,11 @@ If found, extract for style injection:
 
 If not found, proceed with standard style templates.
 
-### Step 3: Verify banana-claude
+### Step 3: Verify generation prerequisites
 
-Verify banana-claude is installed (run `/banana setup` to check). If not installed,
-display setup instructions and exit.
+Confirm the script runs (`python3 ~/.claude/skills/ads/scripts/generate_image.py --help`)
+and the active provider's API key is set. If not, display the setup instructions from
+`image-providers.md` and exit.
 
 ### Step 4: Construct Prompts per Style
 
@@ -138,18 +141,20 @@ For iterative refinement: if initial generation doesn't match brand expectations
 
 ### Step 5: Generate Images
 
-**Domain mode selection per style:**
-- Use banana **Product** mode for Studio, Floating, and Ingredient styles
-- Use banana **Editorial** mode for In Use and Lifestyle styles
-- Set resolution to 2K (default) for all generations
+**Style direction:** each style template above already carries the full photographic
+direction — no separate generation mode is needed.
 
-**Aspect ratio setup:** Use banana MCP `set_aspect_ratio` before each generation:
-- For 1080x1080: set ratio to 1:1
-- For 1080x1920: set ratio to 9:16
+For each style x size combination, run:
 
-For each style x size combination, use `/banana generate` with the constructed
-prompt, selected domain mode, and correct aspect ratio. Save output to
-`./product-photos/[style]/[product-slug]-[style]-[WxH].png`.
+```bash
+python3 ~/.claude/skills/ads/scripts/generate_image.py "<constructed prompt>" \
+  --size 1080x1080 \
+  --output ./product-photos/[style]/[product-slug]-[style]-1080x1080.png --json
+```
+
+Use `--size 1080x1920` for the vertical variant. When the user supplied a real
+product image file, pass it with `--reference-image <path>` for style/product
+fidelity (Gemini only).
 
 Track results. If a generation fails, retry once with a simplified prompt.
 
@@ -185,7 +190,7 @@ Track results. If a generation fails, retry once with a simplified prompt.
   In Use:     ./product-photos/in-use/ (2 sizes)
   Lifestyle:  ./product-photos/lifestyle/ (2 sizes)
 
-  Cost: see ~/.banana/costs.json for total spend
+  Cost: per-image provider pricing in ~/.claude/skills/ads/references/image-providers.md
 
   Best for:
   • Meta Feed → Studio (4:5) or Lifestyle (4:5)
@@ -200,7 +205,7 @@ Track results. If a generation fails, retry once with a simplified prompt.
 
 Before generating, show:
 - Number of styles selected x 2 sizes = total images
-- Estimated cost based on banana pricing tiers
+- Estimated cost from the provider pricing in `image-providers.md`
 - If >$0.50, ask for confirmation
 
 ## Platform Recommendations

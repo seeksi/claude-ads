@@ -11,13 +11,10 @@ tested_with: claude-code v2.x
 Amazon owns ~80% of US retail media (~$56B in 2025). This sub-skill audits
 the three Sponsored ad types plus basic DSP visibility for sellers and
 vendors. Detailed Amazon DSP audit (programmatic / Twitch / Fire TV / Freevee
-/ Prime Video) is queued for Wave 3 in `ads-retail-media`.
+/ Prime Video) is out of scope.
 
 > **Note:** This is a leaf sub-skill. The thresholds and rules below live
-> inline. In Wave 3, once `ads-walmart` ships and the `ads-retail-media`
-> orchestrator extracts the shared retail-media logic, a dedicated
-> `retail-media-specs.md` reference file will replace these inline rules
-> (planned, not yet created — do not link to it from other files).
+> inline; there is no separate retail-media reference file.
 
 ## Process
 
@@ -28,7 +25,7 @@ vendors. Detailed Amazon DSP audit (programmatic / Twitch / Fire TV / Freevee
    Search Terms, Repeat Purchase Behavior, Item Comparison
 3. Verify Seller / Vendor Central context (vendor strategy differs from
    seller strategy on portfolio, coupons, and Sponsored Brands video)
-4. Read `ads/references/benchmarks.md` for Amazon-specific benchmarks
+4. Use the inline Key Thresholds table below for Amazon-specific benchmarks
 5. Read `ads/references/scoring-system.md` for weighted scoring
 6. Evaluate checks per category
 7. Calculate Amazon Ads Health Score (0-100)
